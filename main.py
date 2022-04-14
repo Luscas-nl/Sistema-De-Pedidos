@@ -1,11 +1,7 @@
-from cgitb import text
-from multiprocessing.sharedctypes import Value
-from posixpath import abspath
 from tkinter import *
 from tkinter import font
 from tkinter import ttk
 import sqlite3
-from turtle import dot
 
 win = Tk()
 
@@ -134,7 +130,7 @@ class Application(Funcs):
     def tela(self):
         self.win.title("Sistema de Pedidos")
         self.win.configure(background="#f4b438")
-        self.win.iconbitmap("imagens/ico.ico")
+        self.win.iconbitmap("images/ico.ico")
         self.win.geometry("400x400")
         self.win.resizable(False, False)
     def framesTela(self):
@@ -181,8 +177,7 @@ class Application(Funcs):
         self.strBeb.set("Bebida")
         self.menBeb = OptionMenu(self.frame01, self.strBeb, *self.tipBe, command= self.valueSelector)
         self.menBeb.config(bg= "#888787", font=("arial", 8, "bold"), fg= "white", bd= 0, highlightthickness= 0.7, highlightbackground= "#999999")
-        self.menBeb.place(relx= 0.145, rely= 0.270, relwidth= 0.7, relheight= 0.09)
-        
+        self.menBeb.place(relx= 0.145, rely= 0.270, relwidth= 0.7, relheight= 0.09)       
     def infosPedidos(self):
         self.pedidos = ttk.Treeview(self.frame02, columns= ("Col1", "Col2", "Col3", "Col4", "col5"), height= 3)
         self.pedidos.heading("#0", text= "")
