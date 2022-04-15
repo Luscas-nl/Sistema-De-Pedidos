@@ -150,8 +150,8 @@ class Application(Funcs):
         self.btnAlt = Button(self.frame01, text= "ALTERAR", bd= 0, bg="#f4b438", fg= "#202020", font=("arial black", 8), highlightthickness=50, command= self.updateComanda)
         self.btnAlt.place(relx= 0.1, rely= 0.66, relwidth= 0.25, relheight= 0.15)
         
-        self.btnLimpar = Button(self.frame01, text= "LIMPAR", bd= 0, bg="#f4b438", fg= "#202020", font=("arial black", 8), highlightthickness=50, command= self.limparTela)
-        self.btnLimpar.place(relx= 0.375, rely= 0.66, relwidth= 0.25, relheight= 0.15)
+        self.btnLimp = Button(self.frame01, text= "LIMPAR", bd= 0, bg="#f4b438", fg= "#202020", font=("arial black", 8), highlightthickness=50, command= self.limparTela)
+        self.btnLimp.place(relx= 0.375, rely= 0.66, relwidth= 0.25, relheight= 0.15)
         
         self.btnApg = Button(self.frame01, text= "APAGAR", bd= 0, bg="#f43838", fg= "#202020", font=("arial black", 8), highlightthickness=50, command= self.deleteComanda)
         self.btnApg.place(relx= 0.65, rely= 0.66, relwidth= 0.25, relheight= 0.15)
