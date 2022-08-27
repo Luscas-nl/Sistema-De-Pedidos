@@ -1,2 +1,2 @@
-# Sistema De Pedidos
- Sistemas de pedidos de uma lanchonete criado com Python e a biblioteca TKinter
+# Ordering System
+ Ordering systems for a cafeteria developed to study the TKinter library with Python
